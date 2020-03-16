@@ -1,0 +1,58 @@
+@import "mixins";
+
+.auth {
+  width: 80%;
+  display: block;
+  text-align: center;
+  margin: 40px auto 0;
+  border-radius: 8px;
+  padding: 80px 0;
+  @include pc {
+    border: 2px solid #e9ebee;
+  }
+  button {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    border-radius: 3px;
+    padding: 8px 16px;
+    display: block;
+    margin-bottom: 16px;
+    @include pc {
+    padding: 16px 24px;
+    }
+  }
+  span {
+    padding-left: 16px;
+    font-size: 16px;
+  }
+  i {
+    font-size: 24px;
+  }
+  &__google {
+    background-color: #fff;
+    border: 1px solid #24292e;
+  }
+  &__facebook {
+    background-color: #4267b2;
+    color: #fff;
+  }
+  &__twitter {
+    background-color: rgba(29, 161, 242, 1);
+    color: #fff;
+  }
+  &__github {
+    background-color: #24292e;
+    color: #fff;
+  }
+}
+
+.start-btn {
+  text-align: center;
+  margin: 40px 0;
+  button {
+    padding: 8px 32px;
+  }
+}
