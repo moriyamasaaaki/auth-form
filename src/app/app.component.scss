@@ -5,23 +5,18 @@
   display: block;
   text-align: center;
   margin: 40px auto 0;
-  border-radius: 8px;
   padding: 80px 0;
-  @include pc {
-    border: 2px solid #e9ebee;
-  }
   button {
-    border: none;
     cursor: pointer;
     width: 100%;
-    max-width: 650px;
+    max-width: 600px;
     margin: 0 auto;
     border-radius: 3px;
     padding: 8px 16px;
     display: block;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
     @include pc {
-    padding: 16px 24px;
+      padding: 16px 24px;
     }
   }
   span {
@@ -33,19 +28,39 @@
   }
   &__google {
     background-color: #fff;
-    border: 1px solid #24292e;
+    border: 1px solid #757575;
+    color: #757575;
   }
   &__facebook {
     background-color: #4267b2;
-    color: #fff;
   }
   &__twitter {
     background-color: rgba(29, 161, 242, 1);
-    color: #fff;
   }
   &__github {
     background-color: #24292e;
+  }
+  &__facebook,
+  &__twitter,
+  &__github {
     color: #fff;
+    border: none;
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 24px;
+    }
+  }
+  &__user {
+    img {
+      width: 50px;
+    }
+    p {
+      font-size: 16px;
+    }
   }
 }
 
