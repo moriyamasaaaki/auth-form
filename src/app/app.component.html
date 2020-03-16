@@ -1,9 +1,17 @@
 <form action="" class="auth">
-  <button class="auth__google">
-    <i class="fab fa-google"></i>
-    <span>Googleログイン</span>
+  <ng-container *ngIf="user$ | async as user">
+    <div class="auth__user">
+      <img [src]="user.photoURL" alt="">
+      <p>こんにちは{{ user.displayName }}さん！！</p>
+    </div>
+  </ng-container>
+  <button (click)="googleLogin()" class="auth__google">
+    <div class="auth__img">
+      <img src="assets/google.icon.png" alt="">
+      <span>Googleログイン</span>
+    </div>
   </button>
-  <button class="auth__facebook">
+  <button (click)="facebookLogin()" class="auth__facebook">
     <i class="fab fa-facebook-f"></i>
     <span>Facebookログイン</span>
   </button>
@@ -11,12 +19,13 @@
     <i class="fab fa-twitter"></i>
     <span>Twitterログイン</span>
   </button>
-  <button class="auth__github">
+  <button (click)="githubLogin()" class="auth__github">
     <i class="fab fa-github"></i>
     <span>Githubログイン</span>
   </button>
 </form>
 <div class="start-btn">
-  <button mat-raised-button color="primary">始める</button>
+  <button mat-raised-button color="accent" (click)="logout()" *ngIf="user$ | async">ログアウト</button>
 </div>
+
 <router-outlet></router-outlet>
