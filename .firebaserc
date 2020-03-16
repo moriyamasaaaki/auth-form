@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "auth-form-11562"
+  },
+  "targets": {
+    "auth-form-11562": {
+      "hosting": {
+        "auth-form": [
+          "auth-form-11562"
+        ]
+      }
+    }
   }
 }
