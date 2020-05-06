@@ -1,4 +1,5 @@
-# AuthForm
+# AuthForm/SNSログイン
+[![Image from Gyazo](https://i.gyazo.com/1bf769ea448817db0ce6674d35e94a05.png)](https://gyazo.com/1bf769ea448817db0ce6674d35e94a05)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
